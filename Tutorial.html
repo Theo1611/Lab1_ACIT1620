@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tutorial</title>
+        <style>
+            #myBG {position:fixed;
+                   object-fit:cover;
+                   object-position: center;
+                   left:0px;
+                   top:0px;
+                   width:100vw;
+                   height:100vh}
+            #controls {position:absolute;
+                       left:0px;
+                       top:15vh}
+            #img1 {background-image: url(image/1.jpg)
+                   }
+            #img2 {left:25px;
+                   background-image: url(image/6.jpg)}
+            #img3 {left:25px;
+                   background-image: url(image/3.jpg)}
+            #img4 {background-image: url(image/4.jpg)
+                   }
+            .thumbnails {position:relative;
+                         width:75px;
+                         height:75px;
+                         margin:30px;
+                         border: 2px solid #FFF;
+                         background-size:cover;
+                         opacity:0.3;
+                         border-radius:75px;
+                         transition: 0.8s;
+                         background-position:center}
+            .thumbnails:hover {opacity: 1}
+            #info {opacity:0;
+                   position:absolute;
+                   top:0px;
+                   bottom:0px;
+                   right:0px;
+                   height:50vh;
+                   width:50vw;
+                   margin:auto;
+                   background-color: rgba(200, 200, 255, 0.6);
+                   transition: 1s;}
+            #infoimg {width:100%;
+                      height:80%;
+                      }
+            #infotext {width:100%;
+                       height:20%;}
+            #close {height:20px;
+                    width:20px;
+                    position:absolute;
+                    cursor:pointer;
+                    background-color:red;
+                    opacity:0.7;
+                    text-align:center;
+                    left: -10px;
+                    top: -10px;}
+            #close:hover {opacity: 1}
+        </style>
+    </head>
+
+    <body>
+        <video id='myBG' autoplay loop>
+            <source src = 'video/Moon_and_sea.mov' />
+        </video>
+        <div id='controls'>
+            <div id = 'img1' class='thumbnails'></div>
+            <div id = 'img2' class='thumbnails'></div>
+            <div id = 'img3' class='thumbnails'></div>
+            <div id = 'img4' class='thumbnails'></div>
+        </div>
+        <div id='info'>
+            <div id='infoimg'>
+            </div>
+            <div id='infotext'>
+            </div>
+            <div id = 'close'>X</div>
+        </div>
+        <script>
+            document.getElementById('img1').addEventListener('click', function(){
+                document.getElementById('infoimg').style.backgroundImage = 'url(image/1.jpg)';
+                document.getElementById('infoimg').style.backgroundPosition = 'center center';
+                document.getElementById('infoimg').style.backgroundSize = 'cover';
+                document.getElementById('info').style.opacity = 1;
+                document.getElementById('infotext').innerHTML = 'A haunted looking owl';
+                document.getElementById('infotext').style.textAlign = 'center';
+                document.getElementById('infotext').style.padding= '10px';});
+                                
+            document.getElementById('img2').addEventListener('click', function(){
+                document.getElementById('infoimg').style.backgroundImage = 'url(image/6.jpg)';
+                document.getElementById('infoimg').style.backgroundPosition = 'center center';
+                document.getElementById('infoimg').style.backgroundSize = 'cover';
+                document.getElementById('info').style.opacity = 1;
+                document.getElementById('infotext').innerHTML = 'A glorious looking sight';
+                document.getElementById('infotext').style.textAlign = 'center';
+                document.getElementById('infotext').style.padding= '10px';});
+                
+            document.getElementById('img3').addEventListener('click', function(){
+                document.getElementById('infoimg').style.backgroundImage = 'url(image/3.jpg)';
+                document.getElementById('infoimg').style.backgroundPosition = 'center center';
+                document.getElementById('infoimg').style.backgroundSize = 'cover';
+                document.getElementById('info').style.opacity = 1;
+                document.getElementById('infotext').innerHTML = 'A cute looking kitten';
+                document.getElementById('infotext').style.textAlign = 'center';
+                document.getElementById('infotext').style.padding= '10px';});
+                
+            document.getElementById('img4').addEventListener('click', function(){
+                document.getElementById('infoimg').style.backgroundImage = 'url(image/4.jpg)';
+                document.getElementById('infoimg').style.backgroundPosition = 'center center';
+                document.getElementById('infoimg').style.backgroundSize = 'cover';
+                document.getElementById('info').style.opacity = 1;
+                document.getElementById('infotext').innerHTML = 'A majestic looking unicorn';
+                document.getElementById('infotext').style.textAlign = 'center';
+                document.getElementById('infotext').style.padding= '10px';});
+                
+            document.getElementById('close').addEventListener('click', function(){
+                document.getElementById('info').style.opacity = 0;});
+        </script>
+    </body>
+</html>
