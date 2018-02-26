@@ -1,0 +1,21 @@
+#demo {position:absolute;
+       width:70vw;
+       height:70vh;
+       margin:auto;
+       top:15vh;
+       left: 15vw}
+
+.dcontrols {height:20%;
+            margin:auto;
+            text-align:center;}
+            
+.dimages {height:100%;
+          width:auto;
+          margin-left:auto;
+          margin-right:auto;} 
+          
+#dinput {text-align:center;
+         position:absolute;
+         bottom:23%;
+         left:40%;
+         margin:auto}

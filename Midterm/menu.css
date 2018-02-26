@@ -1,0 +1,10 @@
+#menu {position:fixed;
+       top:-65px;
+       left:0px;
+       text-align:center;
+       padding:5px;}
+       
+#downbutton {position:absolute;
+             bottom:-25px;
+             height:0px;
+             height:25px;}
