@@ -1,0 +1,24 @@
+.rangeInp {
+    width:5%
+}
+#Number {
+    color: white;
+    background-color:black;
+}
+
+#Random {
+    background-color:pink;
+}
+
+#Plus {
+    color: white;
+    background-color:grey;
+}
+
+.newDiv {
+    position:relative;
+    width:100px;
+    height:100px;
+    display: inline-block;
+    margin-top:5px;
+}
